@@ -1,9 +1,9 @@
 import config from "../conf/index.js";
 
 async function init() {
-    console.log('i am init');
+    // console.log('i am init');
     let cities = await fetchCities();
-    console.log(cities,'city data')
+    // console.log(cities,'city data')
     if (cities) {
         cities.forEach(ele => {
             addCityToDom(ele.id, ele.city, ele.description, ele.image)
